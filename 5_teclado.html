@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Colores por teclado</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">Módulo 3</div>
+    <h1>Funciones en JavaScript</h1>
+    <p>Ejercicio 3 - Colores por teclado</p>
+  </header>
+  
+  <div id="key" style="width:200px; height:200px; background-color: white; border: 1px solid black;"></div>
+
+  <footer>Latam -- Bootcamp Desarrollo Web -- 2026</footer>
+  
+  <script>
+    // Variable global donde se guardará el color según la tecla presionada
+    var colorActual;
+
+    const divKey = document.getElementById('key');
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'a') {
+        colorActual = 'pink';        // rosado
+        divKey.style.backgroundColor = colorActual;
+      } else if (event.key === 's') {
+        colorActual = 'orange';      // naranjo
+        divKey.style.backgroundColor = colorActual;
+      } else if (event.key === 'd') {
+        colorActual = 'lightblue';   // celeste
+        divKey.style.backgroundColor = colorActual;
+      } else if (event.key === 'q') {
+        crearDiv('purple');          // morado
+      } else if (event.key === 'w') {
+        crearDiv('gray');            // gris
+      } else if (event.key === 'e') {
+        crearDiv('brown');           // café
+      }
+    });
+
+    // Crea un nuevo div de 200x200 con el color indicado
+    function crearDiv(color) {
+      const nuevoDiv = document.createElement('div');
+      nuevoDiv.style.width = '200px';
+      nuevoDiv.style.height = '200px';
+      nuevoDiv.style.backgroundColor = color;
+      document.body.appendChild(nuevoDiv);
+    }
+  </script>
+</body>
+</html>
