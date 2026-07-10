@@ -144,6 +144,13 @@ header p {
     box-shadow: none;
 }
 
+hr {
+    border: none;
+    border-top: 0px solid white;
+    margin: 5px;
+    padding: 5px;
+}
+
 footer {
     margin-top: 3rem;
     color: cyan;
