@@ -50,8 +50,7 @@ Despues de finalizar este desafío, seremos capaz en:
 
 ---
 
-desafio3-funciones/
-│
+desafio3-funciones/                                                                                                                                                                            │
 ├── index.html
 │
 ├── requerimiento1.html
