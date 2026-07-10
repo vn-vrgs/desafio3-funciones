@@ -52,21 +52,21 @@ Despues de finalizar este desafío, seremos capaz en:
 
 desafio3-funciones/
 │
-├── index.html              ← Menú principal (enlaces a los 5 ejercicios)
+├── index.html
 │
-├── requerimiento1.html     ← Ejercicio 1: Función de expresión
-├── requerimiento2.html     ← Ejercicio 2: Arrow Function
-├── pintar.html             ← Ejercicio 3: Pintar elemento con parámetros
-├── 4_colores.html          ← Ejercicio 4: 4 colores con addEventListener
-├── 5_teclado.html          ← Ejercicio 5: Colores por eventos de teclado
+├── requerimiento1.html
+├── requerimiento2.html
+├── pintar.html        
+├── 4_colores.html
+├── 5_teclado.html
 │
 └── assets/
     ├── css/
-    │   └── styles.css      ← Hoja de estilos global (tema oscuro)
+    │   └── styles.css
     └── js/
-        ├── 1_funcion.js    ← Lógica del ejercicio 1
-        ├── 2_arrow.js      ← Lógica del ejercicio 2
-        └── script.js       ← Script compartido (ejercicios 3 y 4)
+        ├── 1_funcion.js
+        ├── 2_arrow.js  
+        └── script.js   
             
 ---
 
