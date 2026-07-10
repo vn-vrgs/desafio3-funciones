@@ -67,7 +67,7 @@ desafio3-funciones/
         ├── 1_funcion.js    ← Lógica del ejercicio 1
         ├── 2_arrow.js      ← Lógica del ejercicio 2
         └── script.js       ← Script compartido (ejercicios 3 y 4)
-    
+            
 ---
 
 ## Conclusión
