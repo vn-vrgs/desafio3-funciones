@@ -50,6 +50,7 @@ Despues de finalizar este desafío, seremos capaz en:
 
 ---
 
+```text
 desafio3-funciones/                                                                                                                                                                            │
 ├── index.html
 │
@@ -66,8 +67,7 @@ desafio3-funciones/                                                             
         ├── 1_funcion.js
         ├── 2_arrow.js  
         └── script.js   
-            
----
+```
 
 ## Link
 - Repositorio:
