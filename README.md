@@ -69,6 +69,15 @@ desafio3-funciones/                                                             
             
 ---
 
+## Link
+- Repositorio:
+  - https://github.com/vn-vrgs/desafio3-funciones.git
+- Deploy:
+  - https://vn-vrgs.github.io/desafio3-funciones/
+
+---
+
+
 ## Conclusión
 
 Este desafío reúne los principales conceptos introductorios de JavaScript relacionados con funciones y manipulación del DOM. Además de evaluar la sintaxis de funciones tradicionales, funciones de expresión y Arrow Functions, también verifica la capacidad para trabajar con eventos, modificar estilos dinámicamente, reutilizar código mediante parámetros y crear elementos HTML desde JavaScript, consolidando así las bases necesarias para el desarrollo de aplicaciones web interactivas.

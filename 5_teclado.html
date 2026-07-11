@@ -12,17 +12,40 @@
     <h1>Funciones en JavaScript</h1>
     <p>Ejercicio 3 - Colores por teclado</p>
   </header>
-  
-  <div id="key" style="width:200px; height:200px; background-color: white; border: 1px solid black;"></div>
 
-  <footer>Latam -- Bootcamp Desarrollo Web -- 2026</footer>
+  <div class="card">
+    <p>Presiona las siguientes teclas para cambiar el color del elemento</p>
+    <ul>
+      <li><strong>a</strong> - Rosado</li>
+      <li><strong>s</strong> - Naranjo</li>
+      <li><strong>d</strong> - Celeste</li>
+      <li><strong>q</strong> - Morado (crea un nuevo elemento)</li>
+      <li><strong>w</strong> - Gris (crea un nuevo elemento)</li>
+      <li><strong>e</strong> - Café (crea un nuevo elemento)</li>
+    </ul>
+  </div>
+  <br>
   
+  <div id="key" 
+    style="width:200px; 
+            height:200px; 
+            background-color: white; 
+            border: 5px solid red;
+            border-radius: 1rem;
+            padding: 2rem 1.75rem;
+            transition: transform 0.2s ease, 
+                        border-color 0.2s ease, 
+                        box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column; ">
+  </div>
+
+  <footer>Latam -- Bootcamp Desarrollo Full Stack -- 2026</footer>
+
   <script>
     // Variable global donde se guardará el color según la tecla presionada
     var colorActual;
-
     const divKey = document.getElementById('key');
-
     document.addEventListener('keydown', function (event) {
       if (event.key === 'a') {
         colorActual = 'pink';        // rosado
@@ -48,8 +71,12 @@
       nuevoDiv.style.width = '200px';
       nuevoDiv.style.height = '200px';
       nuevoDiv.style.backgroundColor = color;
+      nuevoDiv.style.border = '2px solid red';
+      nuevoDiv.style.borderRadius = '1rem';
+      nuevoDiv.style.marginTop = '1rem';
       document.body.appendChild(nuevoDiv);
     }
   </script>
+
 </body>
 </html>

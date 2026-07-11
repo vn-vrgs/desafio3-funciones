@@ -7,6 +7,7 @@ function pintar(){
 // Restablece el color original
 function restablecer(elemento) {
     elemento.style.backgroundColor = "";
+    elemento.style.color = "";
 }
 
 const elemento = document.getElementById("elemento1") 
