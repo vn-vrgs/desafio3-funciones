@@ -1,5 +1,5 @@
 
-function pintar(){ 
+function pintar( color ){ 
   elemento.style.backgroundColor = 'yellow',
   elemento.style.color = 'black'
 } 
@@ -10,7 +10,8 @@ function restablecer(elemento) {
     elemento.style.color = "";
 }
 
-const elemento = document.getElementById("elemento1") 
+// const elemento = document.getElementById("elemento1") 
+let elemento = document.querySelector("#elemento1");
 elemento.addEventListener("click", pintar); 
 
 btnRestablecer.addEventListener("click", function () {
