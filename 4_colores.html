@@ -12,33 +12,41 @@
     <p>Ejercicio 2 - 4 Colores</p>
   </header>
 
-    <div id="azul" style="width:200px; height:200px; background-color: blue;"></div>
-  <div id="rojo" style="width:200px; height:200px; background-color: red;"></div>
-  <div id="verde" style="width:200px; height:200px; background-color: green;"></div>
-  <div id="amarillo" style="width:200px; height:200px; background-color: yellow;"></div>
+  <div class="grid">
+    <div id="azul"
+      style="width:200px; height:200px; background-color: blue;">
+    </div>
+    <div id="rojo"  
+      style="width:200px; height:200px; background-color: red;">
+    </div>
+    <div id="verde" 
+      style="width:200px; height:200px; background-color: green;">
+    </div>
+    <div id="amarillo" 
+      style="width:200px; height:200px; background-color: yellow;">
+    </div>
+  </div>
 
   <footer>Latam -- Bootcamp Desarrollo Web -- 2026</footer>
-  <script src="./assets/js/script.js"></script>
 
+<script>
+        // Obtener los elementos
+        const azul = document.getElementById("azul");
+        const rojo = document.getElementById("rojo");
+        const verde = document.getElementById("verde");
+        const amarillo = document.getElementById("amarillo");
 
+        // Función que cambia el color a negro
+        function pintarNegro(event) {
+            event.target.style.backgroundColor = "black";
+        }
 
-  <script>
-    // Se seleccionan los 4 divs por su id único
-    const azul = document.getElementById('azul');
-    const rojo = document.getElementById('rojo');
-    const verde = document.getElementById('verde');
-    const amarillo = document.getElementById('amarillo');
+        // Agregar los eventos
+        azul.addEventListener("click", pintarNegro);
+        rojo.addEventListener("click", pintarNegro);
+        verde.addEventListener("click", pintarNegro);
+        amarillo.addEventListener("click", pintarNegro);
+    </script>
 
-    // Función reutilizable que cambia el fondo del elemento clickeado a negro
-    function pintarNegro(event) {
-      event.target.style.backgroundColor = 'black';
-    }
-
-    // Se agrega el evento click a cada div usando addEventListener
-    azul.addEventListener('click', pintarNegro);
-    rojo.addEventListener('click', pintarNegro);
-    verde.addEventListener('click', pintarNegro);
-    amarillo.addEventListener('click', pintarNegro);
-  </script>
 </body>
 </html>

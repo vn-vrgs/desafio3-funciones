@@ -1,11 +1,17 @@
 
-function pintar(elemento, color = 'black') {
-  elemento.style.backgroundColor = color;
-  elemento.style.color = 'green';
-  <p>Ejercicio 1 - Funcion de Pintar</p>
+function pintar(){ 
+  elemento.style.backgroundColor = 'yellow',
+  elemento.style.color = 'black'
+} 
+
+// Restablece el color original
+function restablecer(elemento) {
+    elemento.style.backgroundColor = "";
 }
 
-const elemento = document.getElementById('elemento1');
-elemento.addEventListener('click', function () {
-  pintar(elemento, 'yellow');
+const elemento = document.getElementById("elemento1") 
+elemento.addEventListener("click", pintar); 
+
+btnRestablecer.addEventListener("click", function () {
+    restablecer(elemento);
 });
